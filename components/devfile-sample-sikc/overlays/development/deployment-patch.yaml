@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sikc
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0017-tenant/tkrw-pr714-0075-0017-app/devfile-sample-sikc@sha256:9317a3171f5ea91e48ae21ab10ee1bc3025219920eb56f6564a8980a56537f00
+        name: my-nodejs
+        resources: {}
+status: {}
